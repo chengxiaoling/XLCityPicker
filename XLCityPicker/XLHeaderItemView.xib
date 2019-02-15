@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XLHeaderItemView" customModule="XLCityPicker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="390"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5O5-7W-WUI">
+                    <rect key="frame" x="18" y="8" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBx-Mm-4oq">
+                    <rect key="frame" x="65" y="18" width="292" height="1"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ZXg-0v-Ih2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t6u-gF-a6K" customClass="XLCPContentView" customModule="XLCityPicker" customModuleProvider="target">
+                    <rect key="frame" x="18" y="44" width="339" height="331"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5t-hG-NsG">
+                    <rect key="frame" x="18" y="44" width="44" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.30588235289999999" green="0.38823529410000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YBx-Mm-4oq" firstAttribute="leading" secondItem="5O5-7W-WUI" secondAttribute="trailing" constant="5" id="6jO-YF-Tp7"/>
+                <constraint firstItem="t6u-gF-a6K" firstAttribute="top" secondItem="5O5-7W-WUI" secondAttribute="bottom" constant="15" id="7JY-Az-2pI"/>
+                <constraint firstItem="5O5-7W-WUI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="9wU-pV-mur"/>
+                <constraint firstAttribute="trailing" secondItem="YBx-Mm-4oq" secondAttribute="trailing" constant="18" id="Hvc-Bx-Ane"/>
+                <constraint firstItem="q5t-hG-NsG" firstAttribute="leading" secondItem="5O5-7W-WUI" secondAttribute="leading" id="J1e-jP-3bB"/>
+                <constraint firstItem="YBx-Mm-4oq" firstAttribute="centerY" secondItem="5O5-7W-WUI" secondAttribute="centerY" id="O7L-o2-mgn"/>
+                <constraint firstItem="q5t-hG-NsG" firstAttribute="top" secondItem="5O5-7W-WUI" secondAttribute="bottom" constant="15" id="Sxv-WA-BH9"/>
+                <constraint firstItem="t6u-gF-a6K" firstAttribute="leading" secondItem="5O5-7W-WUI" secondAttribute="leading" id="V1j-jc-Idx"/>
+                <constraint firstItem="5O5-7W-WUI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="WHT-SU-UtL"/>
+                <constraint firstAttribute="bottom" secondItem="t6u-gF-a6K" secondAttribute="bottom" constant="15" id="Zue-LY-0Eg"/>
+                <constraint firstAttribute="trailing" secondItem="t6u-gF-a6K" secondAttribute="trailing" constant="18" id="zXD-Zw-1rx"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ib_contentView" destination="t6u-gF-a6K" id="W6V-vf-BkU"/>
+                <outlet property="ib_itemLabel" destination="5O5-7W-WUI" id="2mD-nL-tes"/>
+                <outlet property="ib_lineViewHC" destination="ZXg-0v-Ih2" id="OTJ-gw-Hff"/>
+                <outlet property="ib_msgLabel" destination="q5t-hG-NsG" id="smu-fB-F7H"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="278.86056971514245"/>
+        </view>
+    </objects>
+</document>
